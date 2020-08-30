@@ -1,0 +1,98 @@
+footer{
+    margin-top:85px;
+}
+.footer-top {
+    background: url(../images/footer-buildings.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6)
+    }
+}
+
+.links-footer {
+    width: 25%;
+    margin: 0;
+    padding: 0 30px;
+
+        @include respond-below(md){
+            
+                width: 50%;
+                margin-bottom: 60px;
+            }
+        
+            @include respond-below(sm){
+                width:100%;
+                padding:0;
+            }
+    li {
+        list-style-type: none;
+
+        a {
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: $font-weight-medium;
+
+            display: block;
+            letter-spacing: 2px;
+        }
+
+        &:not(:last-child) {
+            a {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+.footer-logo {
+    display: flex;
+    align-self: flex-end;
+    z-index: 1;
+    @include respond-below(md){
+        width: 100%;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    @include respond-below(md){
+        justify-content: flex-start;
+        margin-top:0;
+    }
+}
+
+.footer-bottom {
+    padding: 40px 0 30px;
+
+}
+
+.copyright {
+    p {
+        font-size: 0.93rem;
+        color: #848484;
+        letter-spacing: 1px
+    }
+}
+
+.fotoer-social-media {
+    a {
+        color: #848484;
+        display: inline-block;
+        font-size: 20px;
+        color: #848484;
+        padding: 0 10px;
+        @include transition(0.3s ease);
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+}

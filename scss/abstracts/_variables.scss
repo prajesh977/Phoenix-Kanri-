@@ -1,0 +1,29 @@
+$black:#000;
+$white:#fff;
+$primary-color:#5085DC;
+
+
+
+ 
+@mixin prime-gradient($startColor: #4f4bca, $endColor: #51a7e6) {
+    background-color: $endColor;
+    background-image: -moz-linear-gradient(left, $startColor, $endColor); // FF 3.6+
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+    background-image: -webkit-linear-gradient(left, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(left, $startColor, $endColor); // Opera 11.10
+    background-image: linear-gradient(to right, $startColor, $endColor); // Standard, IE10
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}', GradientType=1); // IE9 and down
+  }
+  
+  @mixin linear-gradient($top-color, $bottom-color, $opacity) {
+    background: -moz-linear-gradient(top, rgba($top-color, $opacity) 0%, rgba($bottom-color, $opacity) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba($top-color, $opacity) 0%, rgba($bottom-color, $opacity) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba($top-color, $opacity) 0%, rgba($bottom-color, $opacity) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str(rgba($top-color, $opacity))}', endColorstr='#{ie-hex-str(rgba($bottom-color, $opacity))}',GradientType=0 ); /* IE6-9 */
+}
+@mixin linear-gradient($bottom-color, $top-color, $opacity) {
+  background: -moz-linear-gradient(bottom, rgba($top-color, $opacity) 100%, rgba($top-color, $opacity) 0%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, rgba($top-color, $opacity) 100%, rgba($top-color, $opacity) 0%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba($top-color, $opacity) 100%, rgba($top-color, $opacity) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str(rgba($bottom-color, $opacity))}', endColorstr='#{ie-hex-str(rgba($top-color, $opacity))}',GradientType=0 ); /* IE6-9 */
+}

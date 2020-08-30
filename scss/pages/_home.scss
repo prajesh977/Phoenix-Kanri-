@@ -1,0 +1,279 @@
+
+
+.teaser-announcements {
+    background: #F7F7F7;
+    padding: 20px 0;
+
+    .announcements {
+        span {
+            @include prime-gradient();
+            border-radius: 5px;
+            padding: 10px 25px;
+            color: #fff;
+            display: inline-block;
+            font-weight: $font-weight-light
+        }
+    }
+
+    .listing {
+        font-size: 1.13rem;
+        font-family: $font-secondary-family;
+        font-weight: $font-weight-medium;
+    }
+
+    .date {
+        padding: 0 45px 0 20px;
+    }
+}
+
+.about-company {
+    padding: 85px 0;
+}
+
+.section-about {
+    h2 {
+        font-family: $font-other-family;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        font-weight: $font-weight-regular;
+
+        span {
+            font-weight: $font-weight-medium;
+            text-transform: uppercase;
+            color: $primary-color;
+            margin-left: 10px;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 32px;
+        font-weight: $font-weight-regular;
+    }
+
+}
+
+.about-image {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.company-hiring {
+    padding-bottom: 80px;
+}
+
+.features-type {
+    a {
+        display: block;
+        transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        &:hover {
+            transform: translateY(-15px);
+            box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.2);
+        }
+
+
+    }
+}
+
+.features-thumb {
+    height: 340px;
+    overflow: hidden;
+
+
+
+
+}
+
+.features-body {
+    background: rgb(72, 72, 72);
+    background: linear-gradient(0deg, rgba(72, 72, 72, 1) 0%, rgba(72, 72, 72, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 25px 0 25px;
+}
+
+.features-body-title {
+
+    h4 {
+        font-size: 4.68rem;
+        color: $white;
+        text-transform: uppercase;
+        font-family: $font-other-family;
+        font-weight: $font-weight-bold;
+        letter-spacing: 2px;
+        margin-bottom: -19px;
+    }
+
+    h6 {
+        font-size: 1.375rem;
+        font-weight: $font-weight-medium;
+        color: #fff;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+}
+
+.company-features {
+    background: #F9F9F9;
+    padding-top: 75px ;
+}
+
+.holder {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    background: #fff;
+
+    &-description {
+        padding: 20px;
+    }
+
+    &-title {
+        a {
+            color: #161661;
+            font-weight: $font-weight-medium;
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: block;
+
+            span {
+                width: calc(100% - 25px);
+                display: inline-block;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &-info {
+        p {
+            font-size: 0.875rem;
+            font-weight: $font-weight-regular;
+            color: #161616;
+
+        }
+    }
+}
+
+.holder-image {
+    height: 218px;
+    overflow: hidden;
+
+    .zoom-hover {
+        img {
+            display: block;
+            @include transition(0.3s ease);
+
+            &:hover {
+                transform: scale(1.25);
+            }
+        }
+    }
+}
+
+.background-holder {
+    @include prime-gradient();
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+
+    width: 50%;
+    height: 480px;
+    z-index: 2;
+}
+
+.learn-more {
+    padding-bottom: 300px;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background: url("../images/building-overlay.jpg");
+
+    }
+}
+
+.learn-link {
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+
+    }
+
+    height:480px;
+    z-index: 2;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    h3 {
+        width: 100%;
+        color: #fff;
+        font-size: 3.125rem;
+        font-family: $font-other-family;
+        font-weight: $font-weight-medium;
+        letter-spacing: 2px;
+        margin-bottom: 35px;
+    }
+}
+
+.learn-more-links {
+    align-self: baseline;
+    z-index:3;
+    .btn {
+        margin-bottom: 15px;
+        display:flex;
+    }
+}
+
+.side-bannertop {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: -40px;
+    background-size: cover;
+    width: 55%;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover {
+        transform: translateY(-35px);
+    }
+
+
+}
+
+
+
+.side-banner {
+    position: absolute;
+    z-index: 2;
+    padding: 0 40px;
+    right: 0;
+    background: url(../images/learnmore.png) no-repeat;
+    background-size: cover;
+    width: 55%;
+    height: 560px;
+    bottom: -20px;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover {
+        transform: translateY(-15px);
+    }
+
+
+}

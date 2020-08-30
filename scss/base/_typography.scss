@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+$font-base-size:16px;
+$font-size-1:70px;
+$font-size-2:50px;
+$font-size-3:40px;
+$font-size-4:20px;
+$font-size-4:18px;
+$font-size-small:14px;
+
+$font-base-family:'Noto Sans JP',
+sans-serif;
+$font-secondary-family:'Source Sans Pro',
+sans-serif;
+$font-other-family:'Roboto',
+sans-serif;
+
+$font-weight-thin:300 !default;
+$font-weight-light:300 !default;
+$font-weight-regular:400 !default;
+$font-weight-medium:500 !default;
+$font-weight-semibold:600 !default;
+$font-weight-bold:700 !default;
+$font-weight: () !default;
+$font-weight: map-merge(("300": $font-weight-light, "400": $font-weight-regular, "500": $font-weight-medium, "600": $font-weight-semibold, "700": $font-weight-bold, ), $font-weight);
+
+@each $key,
+$value in $font-weight {
+    .fw-#{$key} {
+        font-weight: $value !important;
+    }
+}
+
+$font-weight-base: $font-weight-regular;

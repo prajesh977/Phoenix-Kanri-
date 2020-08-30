@@ -1,0 +1,116 @@
+.titlebar{
+    background:url(../images/titlebar-bg.jpg)no-repeat;
+    background-position:50% 50%;
+    position:relative;
+    padding:120px 0 60px;
+    margin-bottom:80px;
+    &:after{
+        background:rgba(0,0,0,0.4);
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+    }
+    h1{
+        font-size:1.5rem;
+        color:$white;
+        text-align:center;
+        z-index:1;
+        position:relative;
+    }
+}
+section{
+    &.notices{
+        font-family:$font-secondary-family;
+    }
+}
+
+.notices-year{
+    font-size:1.5rem;
+    color:#848484;
+    border-bottom:1px solid #dbdbdb;
+    padding-bottom:10px;
+    margin-bottom:15px;
+    
+}
+.post{
+    .no-data{
+        color:#B6B6B6;
+        font-size:1.125rem;
+        width:100%;
+        
+    }
+}
+
+.nav-capsule{
+    @include respond-below(md){
+        display:none;
+    }
+    justify-content:center;
+    .nav-item{
+        padding:0 12px;
+        a{
+            padding:12px 35px;
+            border:1px solid #DADADA;
+            border-radius:100px;
+            color:#626262;
+            letter-spacing:2px;
+            
+            @include transition (0.3s ease);
+            &.active,&:hover{
+                background:$primary-color;
+                color:$white;
+                border:1px solid transparent;
+             }
+        }
+    }
+}
+.panel-heading{
+    @include respond-above(md){
+        display:none;
+    }
+}
+.notices-body{
+    .panel-body{
+        @include respond-above(md){
+        padding:40px 0;
+        }
+        .collapse:not(.show){
+            display:block;
+        }
+    }
+ 
+    .post{
+        display:flex;
+        flex-wrap:wrap;
+        align-items: baseline;
+        padding:25px 0;
+        border-bottom:1px solid #DBDBDB;
+        &:last-child{
+            border:none;
+        }
+
+    }
+    
+}
+.post-date{
+    font-size:1.125rem;
+    display:inline-block;
+    padding:0 40px 0 50px;
+}
+.post-title{
+    a{
+        color:black;
+        text-decoration:none;
+        font-size:1.15rem;
+        
+            &:hover{
+                color:$primary-color;
+            }
+    }
+}
+.titlebar-stepper{
+    padding:100px 0 40px;
+}

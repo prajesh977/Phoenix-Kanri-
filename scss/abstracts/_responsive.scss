@@ -1,0 +1,184 @@
+.container-small {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@include respond-above(md) {
+    .container-xs {
+        max-width: 500px;
+    }
+
+    .container-small {
+        max-width: 700px
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .teaser-announcements {
+        .link {
+            margin-left: auto;
+        }
+
+        .title {
+            padding-right: 35px;
+            margin-bottom: 0;
+        }
+    }
+    .about-image{
+        margin:0 ;
+        float:right;
+    }
+    
+}
+
+
+
+
+@include respond-below(md) {
+    html {
+        font-size: 15px;
+    }
+
+    .container-small {
+        max-width: 500px
+    }
+
+    .carousel-item {
+        height: 700px;
+    }
+
+    .carousel-caption {
+        width: 100%;
+        left: 0;
+
+        h5 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+        }
+    }
+
+    .background-holder,
+    .side-banner {
+        width: 100%;
+    }
+
+    .navbar {
+        &.navbar-custom {
+            padding: 15px;
+
+            .nav-item {
+                a {
+                    display: block;
+                    padding: 15px;
+                    font-weight: $font-weight-thin;
+                }
+
+                &:not(:last-child) {
+
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+                }
+            }
+        }
+
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+
+        ul {
+            background: rgba(black, 0.4);
+        }
+    }
+
+    .side-bannertop {
+        width: 100%;
+        height: 400px;
+        bottom: 140px;
+    }
+
+    .learn-more {
+        padding-bottom: 400px;
+    }
+
+    .about-learn,
+    .background-holder, .learn-link {
+        height: 360px;
+    }
+
+    .side-banner {
+        height: 480px;
+        bottom: -20px;
+    }
+
+    .teaser-announcements {
+        .date {
+            padding-left: 5px;
+        }
+
+        .listing {
+            flex-wrap: wrap;
+        }
+    }
+
+  
+    
+   
+   
+   
+}
+
+@include respond-below(sm) {
+    html {
+        font-size: 14px;
+    }
+
+    .carousel-item {
+        height: 500px;
+
+        &.second {
+            .carousel-caption {
+                h5 {
+                    font-size: 1.2rem;
+                    line-height: 32px
+                }
+            }
+        }
+    }
+
+    .carousel-caption {
+        width: 100%;
+        left: 0;
+
+        h5 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+        }
+    }
+    .side-banner {
+        height: 400px;
+        bottom: -20px;
+    }
+    .learn-more{
+        padding-bottom:340px;
+    }
+    .link-more .btn-link {
+        font-size: 1.15rem;
+    }
+
+  
+
+}
