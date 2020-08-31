@@ -43,11 +43,43 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">会社情報</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">採用情報 </a>
+                            
+                            <li class="nav-item dropdown mega-dropdown active">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownnMenu6" data-toggle="dropdown" href="#">採用トップ</a>
+                                <div class="dropdown-menu mega-menu " aria-labelledby="navbarDropdownMenu6">
+                                    <div class="row">
+                                        <div class="d-md-none d-lg-block col-md-6  menu-image">
+                                            <img src="images/menu-employment.jpg" class="img-cover " alt="採用トップ">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 sub-menu">
+                                            <h6>採用情報トップ</h6>
+                                            <ul>
+                                                <li><a href="#" class="menu-item">中途採用</a></li>
+                                                <li><a href="#" class="menu-item">インターン</a></li>
+                                                <li><a href="#" class="menu-item">採用Q&A</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">カルチャー</a>
+                            <li class="nav-item dropdown mega-dropdown active">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownnMenu7" data-toggle="dropdown" href="#">カルチャー</a>
+                                <div class="dropdown-menu mega-menu " aria-labelledby="navbarDropdownMenu7">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 menu-image">
+                                            <img src="images/menu-culture.jpg" class="img-cover " alt="カルチャー">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 sub-menu">
+                                            <h6>カルチャートップ</h6>
+                                            <ul>
+                                                <li><a href="#" class="menu-item">社員データ</a></li>
+                                                <li><a href="#" class="menu-item">働く環境</a></li>
+                                                <li><a href="#" class="menu-item">フェニックスの制度</a></li>
+                                        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
 
 
@@ -59,7 +91,7 @@
         </header>
         <div class="titlebar">
         <div class="container">
-            <h1>お知らせ</h1>
+            <h1 class="text-center">お知らせ</h1>
         </div>
         </div>
         <main>
@@ -67,455 +99,471 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <ul class="nav nav-capsule notices-head" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                <a class="nav-link active" id="all-tab" data-toggle="tab" href="#notice-all" role="tab" aria-controls="notice-all" aria-selected="true">すべて</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" id="second-tab" data-toggle="tab" href="#notice-2" role="tab" aria-controls="notice-2" aria-selected="false">トピックス</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" id="third-tab" data-toggle="tab" href="#notice-3" role="tab" aria-controls="notice-3" aria-selected="false">採用</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="fourth-tab" data-toggle="tab" href="#notice-4" role="tab" aria-controls="notice-4" aria-selected="false">イベント情報</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="fifth-tab" data-toggle="tab" href="#notice-5" role="tab" aria-controls="notice-5" aria-selected="false">プレスリリース</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content notices-body" id="myTabContent">
-                                <div class="tab-pane fade show active" id="notice-all" role="tabpanel" aria-labelledby="all-tab">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseOne">すべて</a></h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse-in">
-                                            <div class="panel-body">
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
+                            <div class="notices-list">
+                                <ul class="nav nav-capsule notices-head" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#notice-all" role="tab" aria-controls="notice-all" aria-selected="true">すべて</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" id="second-tab" data-toggle="tab" href="#notice-2" role="tab" aria-controls="notice-2" aria-selected="false">トピックス</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" id="third-tab" data-toggle="tab" href="#notice-3" role="tab" aria-controls="notice-3" aria-selected="false">採用</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="fourth-tab" data-toggle="tab" href="#notice-4" role="tab" aria-controls="notice-4" aria-selected="false">イベント情報</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="fifth-tab" data-toggle="tab" href="#notice-5" role="tab" aria-controls="notice-5" aria-selected="false">プレスリリース</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content notices-body" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="notice-all" role="tabpanel" aria-labelledby="all-tab">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseOne">すべて</a></h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse-in">
+                                                <div class="panel-body">
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2020</span>
+                                                        </div>
+                                                        <div class="post">
+                                                                <div class="no-data text-center">
+                                                                    お知らせはありません
+                                                                </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="post">
-                                                            <div class="no-data text-center">
-                                                                お知らせはありません
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>採用</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"> <span>採用</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>プレスリリース</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>プレスリリース</span></div>
-                                                        <div class="post-date col-auto"><span>2019</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2019</span>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"> <span>採用</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>プレスリリース</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>プレスリリース</span></div>
+                                                            <div class="post-date col-auto"><span>2019</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                   
                                     
-                                </div>
-                                <div class="tab-pane fade" id="notice-2" role="tabpanel" aria-labelledby="first-tab">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseTwo">トピックス</a></h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
+                                        
+                                    </div>
+                                    <div class="tab-pane fade" id="notice-2" role="tabpanel" aria-labelledby="first-tab">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseTwo">トピックス</a></h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse">
+                                                <div class="panel-body">
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2020</span>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2020.06-16</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2020.06-12</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2020.04-10</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス </span></div>
+                                                            <div class="post-date col-auto"><span>2020.03-26</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                    
                                                     </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.06-16</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.06-12</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.04-10</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2020.03-26</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                
-                                                </div>
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.12-30</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.12-26</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.10-16</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.8-23</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.8-11</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.6-09</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2019</span>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2019.12-30</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2019.12-26</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス</span></div>
+                                                            <div class="post-date col-auto"><span>2019.10-16</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス </span></div>
+                                                            <div class="post-date col-auto"><span>2019.8-23</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス </span></div>
+                                                            <div class="post-date col-auto"><span>2019.8-11</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>トピックス </span></div>
+                                                            <div class="post-date col-auto"><span>2019.6-09</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="notice-3" role="tabpanel" aria-labelledby="third-tab">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseThree">採用</a></h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
+                                    <div class="tab-pane fade" id="notice-3" role="tabpanel" aria-labelledby="third-tab">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseThree">採用</a></h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse">
+                                                <div class="panel-body">
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2020</span>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用</span></div>
+                                                            <div class="post-date col-auto"><span>2020.06-16</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用</span></div>
+                                                            <div class="post-date col-auto"><span>2020.06-12</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
                                                     </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.06-16</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.06-12</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2019</span>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用</span></div>
+                                                            <div class="post-date col-auto"><span>2019.12-30</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用</span></div>
+                                                            <div class="post-date col-auto"><span>2019.12-26</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用</span></div>
+                                                            <div class="post-date col-auto"><span>2019.10-16</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.8-23</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.8-11</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.6-09</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.6-09</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>採用 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.6-09</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tab-pane fade" id="notice-4" role="tabpanel" aria-labelledby="fourth-tab">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseFour">イベント情報</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFour" class="panel-collapse">
+                                                <div class="panel-body">
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2020</span>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2020.06-16</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2020.06-12</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2020.04-10</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2020.04-10</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2020.04-10</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報 </span></div>
+                                                            <div class="post-date col-auto"><span>2020.03-26</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報 </span></div>
+                                                            <div class="post-date col-auto"><span>2020.03-26</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div><div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報 </span></div>
+                                                            <div class="post-date col-auto"><span>2020.03-26</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
                                                     </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.12-30</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.12-26</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.10-16</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.8-23</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.8-11</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.6-09</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.6-09</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.6-09</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2019</span>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2019.12-30</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2019.12-26</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報</span></div>
+                                                            <div class="post-date col-auto"><span>2019.10-16</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.8-23</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.8-11</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="post">
+                                                            <div class="post-category cat-block col-auto"><span>イベント情報 </span></div>
+                                                            <div class="post-date col-auto"><span>2019.6-09</span></div>
+                                                            <h2 class="post-title">
+                                                                <a href="notice-detail.html">採用ホームページが新しくなりました。</a>
+                                                            </h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                </div>
-                                <div class="tab-pane fade" id="notice-4" role="tabpanel" aria-labelledby="fourth-tab">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseFour">イベント情報</a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseFour" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.06-16</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.06-12</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.04-10</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.04-10</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2020.04-10</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2020.03-26</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2020.03-26</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div><div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2020.03-26</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                </div>
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.12-30</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.12-26</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス</span></div>
-                                                        <div class="post-date col-auto"><span>2019.10-16</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.8-23</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.8-11</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="post">
-                                                        <div class="post-category cat-block col-auto"><span>トピックス </span></div>
-                                                        <div class="post-date col-auto"><span>2019.6-09</span></div>
-                                                        <h2 class="post-title">
-                                                            <a href="/">採用ホームページが新しくなりました。</a>
-                                                        </h2>
-                                                    </div>
-                                                </div>
+                                    <div class="tab-pane fade" id="notice-5" role="tabpanel" aria-labelledby="fifth-tab">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseFive">プレスリリース</a></h4>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="notice-5" role="tabpanel" aria-labelledby="fifth-tab">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title"><a data-toggle="collapse" data-parent=".tab-pane" href="#collapseFive">プレスリリース</a></h4>
-                                        </div>
-                                        <div id="collapseFive" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2020</span>
+                                            <div id="collapseFive" class="panel-collapse">
+                                                <div class="panel-body">
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2020</span>
+                                                        </div>
+                                                        <div class="post">
+                                                                <div class="no-data text-center">
+                                                                    お知らせはありません
+                                                                </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="post">
-                                                            <div class="no-data text-center">
-                                                                お知らせはありません
-                                                            </div>
+                                                    <div class="notices-post">
+                                                        <div class="notices-year">
+                                                            <span>2019</span>
+                                                        </div>
+                                                        <div class="post">
+                                                                <div class="no-data text-center">
+                                                                    お知らせはありません
+                                                                </div>
+                                                        </div>
                                                     </div>
+                                                    
                                                 </div>
-                                                <div class="notices-post">
-                                                    <div class="notices-year">
-                                                        <span>2019</span>
-                                                    </div>
-                                                    <div class="post">
-                                                            <div class="no-data text-center">
-                                                                お知らせはありません
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="list-paginate mt-5 mt-md-0">
+                                <ul class="pagination justify-content-end">
+                                  <li class="paginate_button page-item previous">
+                                    <a class="page-link prev btn disabled" href="#" tabindex="-1"><i class="material-icons">chevron_left</i></a>
+                                  </li>
+                                  <li class="paginate_button page-item active"><a class="page-link btn" href="#">1</a></li>
+                                  <li class="paginate_button page-item "><a class="page-link btn" href="#">2</a></li>
+                                  <li class="paginate_button page-item "><a class="page-link btn" href="#">3</a></li>
+                                  <li class="paginate_button page-item ">
+                                    <a class="page-link next btn" href="#"><i class="material-icons">chevron_right</i></a>
+                                  </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
         </section>
+        
         </main>
         <footer>
             <div class="footer-top">
@@ -549,7 +597,7 @@
                             </div>
                         </div>
                         <div class="footer-logo col-12 col-lg-3">
-                            <a href="/"><img src="images/footer-logo.png" alt=""></a>
+                            <a href="/"><img src="images/main-logo.svg" alt=""></a>
                         </div>
                     </div>
                 </div>

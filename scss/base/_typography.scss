@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap');
 $font-base-size:16px;
 $font-size-1:70px;
 $font-size-2:50px;
@@ -15,15 +16,16 @@ $font-secondary-family:'Source Sans Pro',
 sans-serif;
 $font-other-family:'Roboto',
 sans-serif;
+$font-marvel-family:'captainmarvel', sans-serif;
 
-$font-weight-thin:300 !default;
+$font-weight-thin:100 !default;
 $font-weight-light:300 !default;
 $font-weight-regular:400 !default;
 $font-weight-medium:500 !default;
 $font-weight-semibold:600 !default;
 $font-weight-bold:700 !default;
 $font-weight: () !default;
-$font-weight: map-merge(("300": $font-weight-light, "400": $font-weight-regular, "500": $font-weight-medium, "600": $font-weight-semibold, "700": $font-weight-bold, ), $font-weight);
+$font-weight: map-merge(("100": $font-weight-light,"300": $font-weight-light, "400": $font-weight-regular, "500": $font-weight-medium, "600": $font-weight-semibold, "700": $font-weight-bold, ), $font-weight);
 
 @each $key,
 $value in $font-weight {
@@ -32,4 +34,21 @@ $value in $font-weight {
     }
 }
 
-$font-weight-base: $font-weight-regular;
+$font-weight-base: $font-weight-medium;
+
+
+
+@mixin fontface($name, $file, $weight: normal, $style: normal){
+    @font-face {
+      font-family: "#{$name}";
+      src: url('../fonts/#{$file}.eot');
+      src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/#{$file}.woff') format('woff'),
+           url('../fonts/#{$file}.ttf') format('truetype'),
+           url('../fonts/#{$file}.svg?#webfont') format('svg');
+      font-weight: $weight;
+      font-style: $style;
+    }
+  }
+
+  @include fontface(captainmarvelregular, captainmarvel-webfont);

@@ -5,21 +5,18 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const minifycss  = require('gulp-uglifycss');
-
-const path = {
-    scss:'scss/**/*scss',
-    css:'css/**/*css'
-}
 function style() {
 
     return gulp.src('./scss/**/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer('last 2 versions'))
-    .pipe(sourcemaps.write({ includeContent: false }))
-    .pipe(sourcemaps.init({ loadMaps: false }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./css/'))
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(sourcemaps.write({ includeContent: false }))
+        .pipe(sourcemaps.init({ loadMaps: false }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(browserSync.reload({ stream: true }))
+        .pipe(gulp.dest('./css/'))
+      
 
 }
 
@@ -29,10 +26,10 @@ function stylebuild() {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 2 versions'))
          .pipe(browserSync.reload({ stream: true }))
-        
          .pipe(minifycss({
-                        //maxLineLen: 80//(length of string to be in one line css)
-                    }))
+                                    //maxLineLen: 80//(length of string to be in one line css)
+                                }))
+                     .pipe(gulp.dest('./css/'))
          .pipe(gulp.dest('./css/'))
 
 }

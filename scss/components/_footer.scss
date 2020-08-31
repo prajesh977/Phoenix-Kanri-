@@ -1,5 +1,8 @@
 footer{
-    margin-top:85px;
+    @include respond-above(sm){
+    
+    }
+    
 }
 .footer-top {
     background: url(../images/footer-buildings.jpg) no-repeat;
@@ -18,40 +21,89 @@ footer{
     }
 }
 
-.links-footer {
-    width: 25%;
-    margin: 0;
-    padding: 0 30px;
-
-        @include respond-below(md){
-            
-                width: 50%;
-                margin-bottom: 60px;
-            }
-        
-            @include respond-below(sm){
-                width:100%;
-                padding:0;
-            }
-    li {
-        list-style-type: none;
-
-        a {
-            color: #fff;
-            font-size: 0.875rem;
-            font-weight: $font-weight-medium;
-
-            display: block;
-            letter-spacing: 2px;
+.links-footer{
+    width:100%;
+     padding:0;
+         @include respond-above(xxs){
+            width: 50%;
+            padding: 0 15px;
         }
-
-        &:not(:last-child) {
+        @include respond-above(md){
+            width: 25%;
+            padding: 0 30px;
+        }
+        li{
+            list-style-type: none;
+            a{
+                margin-bottom:35px;
+                &:last-child{
+                    margin-bottom:45px;
+                }
+            }
+            &:not(:last-child){
+                a{
+                    margin-bottom:25px;
+                    @include respond-above(md){
+                        margin-bottom:35px;
+                    }
+                }
+                
+            }
             a {
-                margin-bottom: 35px;
+                color: #fff;
+                font-size: 0.875rem;
+                font-weight: $font-weight-medium;
+                display: block;
+                letter-spacing: 2px;
+                
+                
             }
         }
-    }
 }
+// .links-footer {
+//     width: 25%;
+//     margin: 0;
+//     padding: 0 30px;
+
+//         @include respond-below(md){
+//                 padding:0 15px;
+//                 width: 50%;
+//                 margin-bottom: 60px;
+//             }
+        
+//             @include respond-below(xxs){
+//                 width:100%;
+//                 padding:0;
+//                 &:last-child{
+//                     margin-bottom:40px;
+//                 }
+//             }
+//     li {
+//         list-style-type: none;
+//         &:not(:last-child) {
+//             a {
+//                 margin-bottom: 25px;
+//                 @include respond-above(sm){
+//                     margin-bottom:35px;
+//                 }
+//             }
+//         }
+//         a {
+//             color: #fff;
+//             font-size: 0.875rem;
+//             font-weight: $font-weight-medium;
+
+//             display: block;
+//             letter-spacing: 2px;
+//         }
+
+//         &:not(:last-child) {
+//             a {
+//                 margin-bottom: 35px;
+//             }
+//         }
+//     }
+// }
 
 .footer-logo {
     display: flex;
@@ -60,11 +112,10 @@ footer{
     @include respond-below(md){
         width: 100%;
         justify-content: center;
-        margin-top: 35px;
+        margin-top: 0;
     }
-    @include respond-below(md){
+    @include respond-below(xxs){
         justify-content: flex-start;
-        margin-top:0;
     }
 }
 

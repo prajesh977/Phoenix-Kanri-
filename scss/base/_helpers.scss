@@ -29,14 +29,21 @@ button,
         box-shadow: none;
     }
 }
-
-.holder-title a,
-.btn {
-
+.arrow-link{
+    display:flex;
+    align-items:center;
     transform: perspective(1px) translateZ(0);
     transition-duration: 0.1s;
-
-    i {
+    &:hover {
+        >i {
+            transform: translateX(10px)
+        }
+        >i.back{
+            transform: translateX(-10px)
+        }
+    }
+     i {
+         font-size:1.5rem;
         vertical-align: middle;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
@@ -46,16 +53,17 @@ button,
         transition-property: transform;
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
-    }
 
-    &:hover {
-        >i {
-            transform: translateX(15px)
+        &:not(.back){
+            margin-left: 8px;
         }
-    }
+
+     }
 }
 
+
 .btn {
+    padding:0;
     cursor: pointer;
     outline: none;
     transform: perspective(1px) translateZ(0);
@@ -74,12 +82,6 @@ button,
     &:focus {
         outline: none;
         box-shadow: none;
-    }
-
-    i {
-        margin-left: 5px;
-
-
     }
 
 }

@@ -10,32 +10,135 @@ header {
     &.navbar-custom {
         background: rgba(0, 0, 0, 0.4);
         padding: 0 25px;
-
+        @include respond-below(md){
+            background:#212121;
+            padding: 15px;
+        }
         .nav-item {
-            a {
-                color: #fff;
+            
+                @include respond-below(md){
+                    &:not(:last-child) {
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                }
+            >a {
+               
                 padding:20px 30px;
                 color: #fff;
                 display: inline-block;
                 position: relative;
                 font-weight: $font-weight-regular;
-
+                @include transition(0.45s ease);
+                @include respond-below(md){
+                    display: block;
+                    padding: 15px;
+                    font-weight: $font-weight-medium;
+                    color:$black;
+                    
+                }
+                @include respond-below(xs){ 
+                    text-align:center;
+                }
                 &:hover {
-                    color: $primary-color;
+                    color: $black;
                     background:$white;
                 }
             }
 
-            &.active {
+            > &.active {
                 a {
                     color: $primary-color;
                 }
             }
         }
+        .dropdown-menu{
+            width:550px;
+            left:auto;
+            right:0;
+            padding:0;
+            margin:0;
+            display:block;
+            opacity:0;
+            visibility:hidden;
+            box-shadow:0 4px 15px rgba(0,0,0,0.20);
+            border:none;
+            border-radius:0; 
+            @include transition(0.5s ease);
+            @include respond-below(md){
+                display:none;
+                width:100%;
+                padding:0 15px;
+            }
+            @include respond-below(xs){
+                position:static;
+               width:100%;
+               text-align:center;
+               box-shadow: none;;
+            }
+        }
     }
 
 }
-
+.sub-menu{
+  padding-top:40px;
+  padding-bottom:40px;
+  position:relative;
+  @include respond-below(sm){
+    padding-top:10px;
+    padding-bottom:10px;
+}
+  &:after{
+      @include respond-above(md){
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 3rem 3rem;
+    border-color: transparent transparent #007bff transparent;
+}
+//    @include respond-below(sm){
+//        padding-top:20px;
+//        padding-bottom:20px;
+//        right:0;
+//    }
+  }
+  h6{
+     margin-bottom:30px; 
+  }
+  ul{
+      li{
+          position:relative;
+        &:not(:last-child){
+            margin-bottom:20px;
+        }
+        &:before {
+            display: inline-block;
+            content: "_";
+            width: 1em;
+            position:absolute;
+            bottom:5px;
+        }
+      }
+  }
+  .menu-item{
+      font-size:0.85rem;
+      color:$black;
+      padding-left:1.5rem;
+      display:inline-block;
+     
+     
+  }
+}
+.menu-image{
+        height:250px;
+        @include respond-below(md){
+            display:none;
+        }
+   
+}
 .navbar-toggler-icon {
     width: 30px;
 
@@ -101,18 +204,47 @@ header {
         }
     }
 }
-
+.dropdown{
+    &:hover{
+        .dropdown-menu  {
+           
+            opacity:1;
+             visibility:visible;
+             @include respond-below(md){
+                 display:block;
+                 box-shadow:none;
+             }
+        }
+    } 
+    &-toggle{
+        &::after{
+            display:none
+        }
+    }
+}
 .banner-slider {
     .carousel-caption {
         top: 50%;
         transform: translateY(-50%);
         bottom: auto;
+        z-index:1;
     }
 }
 
 .carousel-item {
-    height: 900px;
-
+    @include respond-above(md){
+        height: 825px;
+    }
+    @include respond-below(md){
+        height: 650px;
+    }
+    @include respond-below(sm){
+        height: 500px;
+    }
+    @include respond-below(xs){
+        height: 400px;
+    }
+   
     img {
         object-fit: cover;
 
@@ -126,14 +258,7 @@ header {
         }
     }
 
-    &.second {
-        .carousel-caption {
-            h5 {
-                font-size: 1.57rem;
-                line-height: 50px;
-            }
-        }
-    }
+  
 }
 
 .carousel-item {
@@ -141,7 +266,7 @@ header {
         .carousel-caption {
             color: $black 
         }
-
+       
         .link-more {
             .btn-link {
                 color: $black; 
@@ -160,23 +285,60 @@ header {
         .carousel-caption { 
             text-align: left;
         }
+        .container-md{
+            margin:0;
+        }
     }
 }
 
 .carousel-caption {
+    @include respond-below(md){
+        width: 100%;
+        left: 0;
+    }
+    @include respond-below(sm){
+        width: 100%;
+        left: 0; 
+    }
+    
     h5 {
+        @include respond-below(md){
+                font-size: 2rem;
+        }
+        @include respond-below(sm){
+                font-size: 2rem;
+        }
+        @include respond-below(xs){
+                font-size: 1.75rem; 
+                margin-bottom:25px;
+        }
+        @include respond-below(xxs){
+            font-size: 1.5rem; 
+          
+        }
         font-size: 2.37rem;
         font-weight: $font-weight-medium;
         margin-bottom: 35px;
         line-height: 1.5;
+       
     }
 
     p {
         font-size: 1.5rem;
         font-weight: $font-weight-medium;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         line-height: 1.5;
         font-family: $font-secondary-family;
+        @include respond-below(md){
+                font-size: 1.4rem;
+        }
+        @include respond-below(sm){
+                font-size: 1.3rem;
+                margin-bottom:25px;
+        }
+        @include respond-below(xs){
+                font-size: 1rem;
+        }
     }
 
 }
