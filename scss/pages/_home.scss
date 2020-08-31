@@ -289,7 +289,7 @@
     h3 {
         width: 100%;
         color: #fff;
-        font-size: 3.125rem;
+        font-size: 3.85rem;
         font-family: $font-other-family;
         font-weight: $font-weight-medium;
         letter-spacing: 2px;
@@ -309,8 +309,12 @@
     align-self: baseline;
     z-index:3;
     .btn {
-        margin-bottom: 15px;
+        
         display:flex;
+        font-size:1.25rem;
+        &:not(:last-child){
+            margin-bottom:15px;
+        }
     }
 }
 
@@ -348,9 +352,7 @@
     height: 560px;
     bottom: -20px;
     transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-    @include respond-above(md){
-        background-position:center left;
-    }
+   
     @include respond-below(md){
         width:100%;
         height:500px;

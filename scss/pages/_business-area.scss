@@ -13,7 +13,7 @@
     display:flex;
     flex-wrap:wrap;
     align-items:center;
-    @include respond-below(xs){
+    @include respond-below(sm){
         justify-content:center;
         }
 }
@@ -26,7 +26,7 @@
     padding: 30px 25px;
     max-width:210px;
     font-family:captainmarvelregular;
-    @include respond-below(xs){
+    @include respond-below(sm){
         text-align:center;
         padding:15px;
         margin-bottom: 25px;
@@ -56,8 +56,12 @@
 .business-body{
     color:#fff;
     z-index:1;
-    @include respond-above(xs){
+    @include respond-below(sm){
+        min-width:100%;
+    }
+    @include respond-above(sm){
         padding-left:40px;
+       
     }
     h2{
         font-size:1.25rem;
@@ -98,7 +102,7 @@
                 -webkit-line-clamp: 3;
                 white-space: normal;
             }
-           
+         
             a{
                 color:inherit;
                 &:hover{

@@ -224,27 +224,39 @@ header {
 }
 .banner-slider {
     .carousel-caption {
-        top: 50%;
-        transform: translateY(-50%);
+       
         bottom: auto;
         z-index:1;
+        @include respond-above(xxs){
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @include respond-below(xxs){
+            top:45%;
+            transform: translateY(-45%);
+        }
     }
 }
 
 .carousel-item {
+  
     @include respond-above(md){
-        height: 825px;
+        height: 900px;
     }
+  
     @include respond-below(md){
-        height: 650px;
-    }
-    @include respond-below(sm){
-        height: 500px;
-    }
-    @include respond-below(xs){
-        height: 400px;
+        height:700px;
     }
    
+
+  
+    @include respond-below(xs){
+        height: 560px;
+    }
+  
+    @include respond-above(xxl){
+        height: 1250px;
+    }
     img {
         object-fit: cover;
 
@@ -252,11 +264,7 @@ header {
         height: 100%;
     }
 
-    &:nth-child(2) {
-        img {
-            object-position: bottom;
-        }
-    }
+ 
 
   
 }
@@ -309,12 +317,12 @@ header {
                 font-size: 2rem;
         }
         @include respond-below(xs){
-                font-size: 1.75rem; 
+                font-size: 1.5rem; 
                 margin-bottom:25px;
         }
         @include respond-below(xxs){
-            font-size: 1.5rem; 
-          
+            font-size: 1.35rem; 
+            margin-bottom:20px;
         }
         font-size: 2.37rem;
         font-weight: $font-weight-medium;

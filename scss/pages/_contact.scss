@@ -1,0 +1,111 @@
+.company-personnel{
+    padding:0 0 85px 0;
+    @include respond-below(md){
+        padding:0 0 50px 0; 
+    }
+}
+.contact-profile{
+    background:#fafafa;
+    position:relative;
+}
+.company-info{
+    font-weight:$font-weight-semibold;
+    @include respond-above(sm){
+        margin-left:auto;
+    }
+    h4{
+        font-size:1.25rem;
+        margin-bottom:25px;
+    }
+}
+.contact-statement{
+    h5{
+        margin-bottom:40px;
+    }
+    @include respond-above(sm){
+        padding-right:60px
+    }
+}
+.info-body{
+    padding:75px 0 75px 60px;
+   @include respond-below(md){
+       padding:50px 0;
+   }
+
+}
+.statement-body{
+    margin-bottom:45px;
+    h4{
+        line-height:1.8;
+        margin-bottom:35px;
+        @include respond-below(sm){
+            text-align:center;
+            font-size: 1.35rem;
+        }
+    }
+    p{
+        line-height:2;
+        font-weight:$font-weight-regular;
+    }
+}
+.company-building{
+    background:url(./../images/contact-building.jpg)no-repeat;
+    background-size:cover;
+    background-position:center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    @include respond-below(sm){
+        background-size:contain;
+        position:static;
+        height:600px;
+        width:100%;
+    }
+}
+.dataset{
+    font-size:0.875rem;
+    display:flex;
+    align-items: flex-start;
+    @include respond-below(sm){
+        font-size:1rem;
+    }
+    &:not(:last-child){
+        border-bottom:1px solid #ECECEC;
+    }
+    
+    .key, .value{
+        padding:20px 0;
+        line-height: 2;
+    }
+    .key{
+        color:#848484;
+        min-width:165px;
+    }
+    .value{
+        font-weight:$font-weight-regular;
+        
+    }
+    .dataset{
+        .key{
+            color:$black;
+        }
+        border:none;
+    }
+} 
+
+.representative{
+    @include respond-below(sm){
+        order:1;
+        margin-bottom:25px;
+    }
+}
+.message{
+    @include respond-below(sm){
+        order:2;
+    }
+}
+iframe{
+    width:100%;
+}
