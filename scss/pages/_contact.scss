@@ -10,12 +10,17 @@
 }
 .company-info{
     font-weight:$font-weight-semibold;
+    width:100%;
     @include respond-above(sm){
-        margin-left:auto;
+        margin-left:40%;
+        width:60%;
     }
     h4{
         font-size:1.25rem;
-        margin-bottom:25px;
+        margin-bottom:15px;
+        @include respond-below(xxs){
+            margin-bottom:0;
+        }
     }
 }
 .contact-statement{
@@ -27,9 +32,12 @@
     }
 }
 .info-body{
-    padding:75px 0 75px 60px;
-   @include respond-below(md){
-       padding:50px 0;
+    padding:70px 0 50px 75px;
+    @include respond-below(md){
+        padding:50px 0 40px 40px;
+   }
+   @include respond-below(sm){
+        padding:40px 15px 40px
    }
 
 }
@@ -58,16 +66,19 @@
     height: 100%;
     width: 40%;
     @include respond-below(sm){
-        background-size:contain;
+        background-size:contain; 
         position:static;
         height:600px;
         width:100%;
+      
     }
 }
 .dataset{
-    font-size:0.875rem;
+    @include respond-above(xxs){
     display:flex;
     align-items: flex-start;
+    }
+    font-size:0.9rem;
     @include respond-below(sm){
         font-size:1rem;
     }
@@ -76,20 +87,56 @@
     }
     
     .key, .value{
+       
+        @include respond-above(xxs){
         padding:20px 0;
         line-height: 2;
     }
+    }
     .key{
         color:#848484;
-        min-width:165px;
+        @include respond-below(xxs){
+            padding:20px 0 8px 0; 
+        }
+          @include respond-above(xxs){
+        min-width: 165px;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 200px;
+        padding-right: 40px;
+        }
     }
     .value{
         font-weight:$font-weight-regular;
+        flex:1;
+        @include respond-below(xxs){
+            padding:8px 0 20px 0;
+        }
         
     }
+   
     .dataset{
+        @include respond-below(xs){
+
+            display:block;
+        }
         .key{
             color:$black;
+            flex: 1;
+            padding-right: 45px;
+            @include respond-below(xs){
+                padding-bottom:0;
+                min-width:auto;
+            }
+           
+        }
+        .value{
+            @include respond-below(xs){
+                padding-top:10px;
+            }
         }
         border:none;
     }
@@ -105,6 +152,9 @@
     @include respond-below(sm){
         order:2;
     }
+}
+.google-map{
+    margin-bottom:-5px;
 }
 iframe{
     width:100%;

@@ -24,9 +24,13 @@ footer{
 .links-footer{
     width:100%;
      padding:0;
+     @include respond-below(xxs){
+        text-align:center;
+     }
          @include respond-above(xxs){
             width: 50%;
             padding: 0 15px;
+           
         }
         @include respond-above(md){
             width: 25%;
@@ -115,7 +119,7 @@ footer{
         margin-top: 0;
     }
     @include respond-below(xxs){
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
 

@@ -75,6 +75,15 @@ header {
                text-align:center;
                box-shadow: none;;
             }
+            @include respond-below(md){
+                display:none;
+                box-shadow:none;
+                &.show{
+                    display:block;
+                    opacity:1;
+                    visibility:visible;
+                }
+            }
         }
     }
 
@@ -83,7 +92,7 @@ header {
   padding-top:40px;
   padding-bottom:40px;
   position:relative;
-  @include respond-below(sm){
+  @include respond-below(md){
     padding-top:10px;
     padding-bottom:10px;
 }
@@ -210,10 +219,7 @@ header {
            
             opacity:1;
              visibility:visible;
-             @include respond-below(md){
-                 display:block;
-                 box-shadow:none;
-             }
+             
         }
     } 
     &-toggle{
@@ -237,12 +243,17 @@ header {
         }
     }
 }
-
+.carousel-inner .material-icons{
+       font-size:1.25rem;
+   }
 .carousel-item {
-  
+   
     @include respond-above(md){
-        height: 900px;
+        height:100vh;
     }
+    // @include respond-above(xxl){
+    //     height: calc(100vh - 80px);
+    // }
   
     @include respond-below(md){
         height:700px;
@@ -254,9 +265,7 @@ header {
         height: 560px;
     }
   
-    @include respond-above(xxl){
-        height: 1250px;
-    }
+  
     img {
         object-fit: cover;
 
@@ -354,7 +363,10 @@ header {
 .link-more {
     .btn-link {
         color: $white;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         letter-spacing: 4px;
+        @include respond-below(sm){
+            font-size:1.05rem;
+        }
     }
 }
