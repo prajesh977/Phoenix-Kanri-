@@ -1,7 +1,8 @@
 .titlebar{
     background:url(../images/titlebar-bg.jpg)no-repeat;
     padding:120px 0 60px;
-  
+    background-position:center center;
+    background-size:cover;
     h1{
         font-size:1.5rem;
         color:$white;
@@ -119,7 +120,11 @@ section{
 
 //notice-detail
 
-
+.notice-content{
+    >.container{
+        max-width:960px;
+    }
+}
 .notice-post{
     &:not(:last-child){
         margin-bottom:30px;

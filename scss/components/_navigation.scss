@@ -277,7 +277,29 @@ header {
 
   
 }
-
+.carousel-caption{
+    .btn-link{
+        &:hover{
+            i{
+                transform: translateX(15px);  
+            }
+        }
+        i{
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-transition-duration: .1s;
+            transition-duration: .1s;
+            -webkit-transition-property: transform;
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            transition-property: transform;
+            transition-property: transform,-webkit-transform;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+    }
+}
 .carousel-item {
  &:nth-child(2), &:nth-child(3) {
         .carousel-caption {

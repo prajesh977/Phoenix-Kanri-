@@ -1,0 +1,84 @@
+.internship{
+    background:#fafafa;
+    padding:50px 0;
+    @include respond-above(xs){
+        padding:75px 0;
+    }
+}
+.content-holder{
+    li{
+        font-weight:$font-weight-regular;
+    }
+}
+
+.conditions-row{
+    font-size:0.9rem;
+    @include respond-above(sm){
+   display:flex;
+}
+   &:not(:last-child){
+   border-bottom:1px solid #ECECEC;
+}
+   .label-holder{
+    padding:5px 0;
+       
+       @include respond-above(sm){
+          padding-right:25px;
+           min-width:210px;
+           padding:0;
+       }
+       h6{
+           color:#848484;
+       }
+   }
+   .content-holder{
+       padding:5px 0;
+       @include respond-above(sm){
+         padding:0;
+       width:calc(100% - 200px);
+    }
+   }
+}
+.content-holder{
+    li{
+        &:not(:last-child){
+            margin-bottom:15px;
+        }
+        
+    }
+}
+.process-count{
+  
+        border:1px solid #ccc;
+            padding:25px ;
+            text-align:center;
+            margin-bottom:25px;
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-wrap:wrap;
+            >*{
+                width:100%;
+            }
+        @include respond-above(md){
+          
+            
+        }
+   
+}
+.passthrough{
+    li{
+        margin:15px 0;
+        font-family:$font-secondary-family;
+        list-style-type: square;
+        list-style-position: inside;
+    }
+}
+
+.formlabel{
+color:#848484;
+}
+.formvalue{
+
+}

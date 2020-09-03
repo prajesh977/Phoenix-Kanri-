@@ -25,11 +25,12 @@
     display:inline-block;
     align-self: baseline;
     min-width:140px;
-    text-align:center;
+    text-align:center; 
 }
 
 .titlebar{
-    background-position:50% 50%;
+    background-position:center center;
+    background-size:cover;
     position:relative;
     margin-bottom:80px;
     &:after{

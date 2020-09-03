@@ -35,6 +35,7 @@ button,
     transform: perspective(1px) translateZ(0);
     transition-duration: 0.1s;
     &:hover {
+        text-decoration: none;
         >i {
             transform: translateX(10px)
         }
@@ -63,12 +64,27 @@ button,
 
 
 .btn {
-    padding:0;
+    outline:none;
+    &:focus{
+        box-shadow:none;
+    }
+    &.btn-link,&.is-link{
+
+        padding:0;
+    }
+    &.round{
+        border-radius:50px;
+    }
+    &.semiround{
+        border-radius:5px;
+    }
     cursor: pointer;
     outline: none;
     transform: perspective(1px) translateZ(0);
     transition-duration: 0.1s;
-
+    &.btn-link:hover{
+        text-decoration:none;
+    }
     &.is-link {
         border: none;
         background: none;
@@ -83,7 +99,15 @@ button,
         outline: none;
         box-shadow: none;
     }
-
+    &-lg{
+        padding:0.6rem 3rem;
+        font-size:1rem;
+        font-weight:$font-weight-regular;
+    }
+    &-primary{
+        background:$primary-color;
+        color:#fff; 
+    }
 }
 
 .img-contain {

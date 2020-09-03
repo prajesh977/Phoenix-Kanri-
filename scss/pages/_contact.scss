@@ -91,9 +91,9 @@
         @include respond-above(xxs){
         padding:20px 0;
         line-height: 2;
+    } 
     }
-    }
-    .key{
+    .key{   
         color:#848484;
         @include respond-below(xxs){
             padding:20px 0 8px 0; 
@@ -117,7 +117,15 @@
         }
         
     }
-   
+    .valueset{
+        ul{
+            li{
+                list-style-type:square;
+                list-style-position: inside;
+                margin-bottom:10px;
+            }
+        }
+    }
     .dataset{
         @include respond-below(xs){
 
@@ -139,6 +147,7 @@
             }
         }
         border:none;
+       
     }
 } 
 

@@ -33,16 +33,20 @@
     }
     h1{
         font-size:4rem;
+        display:inline-block;
         @include respond-above(xs){
             font-size:4.375rem;
-        }
-        span{ 
-            font-size:2.5rem;
-            font-weight:$font-weight-medium;
-            @include respond-above(xs){
-                font-size:2.8rem;
+            +span{ 
+                font-size: 3.15rem;
+                padding-left: 10px;
+                font-family:'Source Sans Pro';
+                font-weight:$font-weight-light;
+                @include respond-above(xs){
+                    font-size:3.5rem;
+                }
             }
         }
+        
     }
     .h2{
         font-size:1.5rem;
@@ -105,9 +109,7 @@
          
             a{
                 color:inherit;
-                &:hover{
-
-                }
+                
             }
         }
         &:not(:last-child){
