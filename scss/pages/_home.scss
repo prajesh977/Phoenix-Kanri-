@@ -179,16 +179,19 @@
         }
     }
     &-description {
-        padding: 20px;
+        padding: 19px;
     }
 
     &-title {
-        a {
-            color: #161616;
+        >a,.nolink-title{
             font-weight: $font-weight-medium;
             font-size: 20px;
-            letter-spacing: 2px;
             margin-bottom: 10px;
+        }
+       
+        a, .nolink-title {
+            color: #161616;
+            letter-spacing: 2px;
             text-decoration:none;
             span {
                 width: calc(100% - 25px);
@@ -201,12 +204,15 @@
     }
 
     &-info {
-        p {
-            font-size: 0.875rem;
-            font-weight: $font-weight-regular;
-            color: #161616;
-
-        }
+      
+            a{
+                font-size: 0.875rem;
+                font-weight: $font-weight-regular;
+                color: #161616;
+                &:not(:last-child){
+                    margin-bottom:16px;
+                }
+            }
     }
 }
 
